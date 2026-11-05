@@ -1,0 +1,8 @@
+packages:
+  - lib/api-spec/api-client-react
+
+catalog:
+  '@tanstack/react-query': ^5.90.21
+  zod: ^3.25.76
+
+autoInstallPeers: false
