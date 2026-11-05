@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "ChatConvert Keyboard",
+    "slug": "chatconvert-keyboard",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon-generated.png",
+    "scheme": "chatconvert-keyboard",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "com.chatconvert.keyboard",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon-generated.png",
+        "backgroundColor": "#07183d"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "./plugins/withChatConvertKeyboard"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}

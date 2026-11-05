@@ -1,0 +1,24 @@
+kind = "mobile"
+previewPath = "/chatconvert-keyboard/"
+title = "ChatConvert Keyboard"
+description = "A real Android custom keyboard that converts English text into natural Romanized Telugu and Hindi meanings directly inside any chat app, with a companion setup and privacy screen."
+version = "1.0.0"
+id = "artifacts/chatconvert-keyboard"
+router = "expo-domain"
+
+[[services]]
+name = "expo"
+ensurePreviewReachable = "/status"
+paths = [ "/chatconvert-keyboard/" ]
+localPort = 19531
+
+[services.development]
+run = "pnpm --filter @workspace/chatconvert-keyboard run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/chatconvert-keyboard", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/chatconvert-keyboard", "run", "serve" ]
+
+[services.env]
+PORT = "19531"
+BASE_PATH = "/chatconvert-keyboard/"
